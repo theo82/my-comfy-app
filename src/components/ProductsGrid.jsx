@@ -22,7 +22,7 @@ const ProductsGrid = () => {
             </figure>
             <div className='card-body items-center text-center'>
               <h2 className='card-title'>{title}</h2>
-              <span className='text-secondary'>${price}</span>
+              <span className='text-secondary'>${price / 100}</span>
             </div>
           </Link>
         )
