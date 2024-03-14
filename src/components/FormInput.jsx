@@ -7,18 +7,18 @@
  * @param {string} defaultValue - The default value for the input field
  * @return {JSX.Element} A form input element
  */
-const FormInput = ({ label, name, type, defaultValue }) => {
+const FormInput = ({ label, name, type, defaultValue, size }) => {
   return (
     <div className='form-control'>
       <label className='label'>
-        <span className='label-text'>{label}</span>
+        <span className='label-text capitalize'>{label}</span>
       </label>
       <input
         name={name}
         defaultValue={defaultValue}
         type={type}
         placeholder='Type here'
-        className='input input-bordered'
+        className={`input input-bordered ${size}`}
       />
     </div>
   )
